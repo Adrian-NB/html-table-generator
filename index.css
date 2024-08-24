@@ -1,5 +1,23 @@
+.startContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .tableCreator {
-    border: 0px;
+    border: 5px solid rgb(15, 53, 224);
+    border-radius: 10px;
     background-color: #ffc0cb;
     color: #000;
+    width: 150px;
+    height: 150px;
+    /* margin: auto; */
 }
+
+.title{
+    font-size: xx-large;
+    font-weight: 800;
+    /* text-align: center; */
+}
+
+

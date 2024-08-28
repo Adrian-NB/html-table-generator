@@ -1,7 +1,16 @@
+#main {
+    display: none;
+}
+
 #startContainer {
     align-items: center;
     display: flex;
     flex-direction: column;
+}
+
+.fakeTableContainer,
+.tableCreatorMenu {
+    width: 50%;
 }
 
 .tableCreator {
@@ -13,7 +22,23 @@
     width: 150px;
 }
 
-.title{
+.title {
     font-size: xx-large;
     font-weight: 800;
+}
+
+
+.topRow {
+    display: flex;
+}
+
+.bottomRow {
+    display: flex;
+    justify-content: center;
+}
+
+.generatedComponent {
+    width:30%;
+    background-color: gray;
+    text-align: center;
 }

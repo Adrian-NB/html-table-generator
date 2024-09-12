@@ -8,17 +8,20 @@
     flex-direction: column;
 }
 
+.bottomRow {
+    display: flex;
+    justify-content: center;
+}
+
+.generatedComponent {
+    width: 30%;
+    background-color: gray;
+    text-align: center;
+}
+
 .fakeTableContainer,
 .tableCreatorMenu {
     width: 50%;
-}
-
-.fakeTableContainer {
-    padding-top: 16px;
-}
-
-.tableCreatorMenu {
-    padding-left: 15px;
 }
 
 .fakeRow,
@@ -30,6 +33,37 @@
 .fakeTableContainer div {
     border: 1px solid black;
     padding: 20px;
+}
+
+.fakeTableContainer {
+    padding-top: 16px;
+}
+
+.inputContainer div {
+    width: 25%;
+}
+
+.inputContainer {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.inputContainer input {
+    width: 100%;
+}
+
+input,
+label {
+    display: block;
+}
+
+.rowContainer {
+    margin-right: 25px;
+}
+
+
+.tableCreatorMenu {
+    padding-left: 15px;
 }
 
 .tableCreator {
@@ -49,15 +83,4 @@
 
 .topRow {
     display: flex;
-}
-
-.bottomRow {
-    display: flex;
-    justify-content: center;
-}
-
-.generatedComponent {
-    width: 30%;
-    background-color: gray;
-    text-align: center;
 }

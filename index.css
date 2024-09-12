@@ -13,6 +13,25 @@
     width: 50%;
 }
 
+.fakeTableContainer {
+    padding-top: 16px;
+}
+
+.tableCreatorMenu {
+    padding-left: 15px;
+}
+
+.fakeRow,
+.fakeTable,
+.fakeColumn {
+    width: 95%;
+}
+
+.fakeTableContainer div {
+    border: 1px solid black;
+    padding: 20px;
+}
+
 .tableCreator {
     background-color: #ffc0cb;
     border: 5px solid rgb(15, 53, 224);
@@ -38,7 +57,7 @@
 }
 
 .generatedComponent {
-    width:30%;
+    width: 30%;
     background-color: gray;
     text-align: center;
 }

@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>HTML Table Generator</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>        
-        <script src="index.js" async defer></script>
-        <div id="startContainer">
-            <h1 class="title">Table Generator</h1>
-            <button class="tableCreator" type="button" onclick="hideInitalView()">Create Table</button>
-        </div>
-        <div id="main">
-            <h1>Table Generator</h1>
-            <div class="topRow">
-                <div class="fakeTableContainer">
-                    <p>This will hold table</p>
-                </div>
-                <div class="tableCreatorMenu">
-                    <p>This will hold table menu</p>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HTML Table Generator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <script src="index.js" async defer></script>
+    <div id="startContainer">
+        <h1 class="title">Table Generator</h1>
+        <button class="tableCreator" type="button" onclick="hideInitalView()">Create Table</button>
+    </div>
+    <div id="main">
+        <h1>Table Generator</h1>
+        <div class="topRow">
+            <div class="fakeTableContainer">
+                <span>Table</span>
+                <div class="fakeTable">
+                    <span>Row 1</span>
+                        <div class="fakeRow">
+                            <span>Column 1</span>
+                            <div class="fakeColumn">
+
+                            </div>
+                        </div>
                 </div>
             </div>
-            <div class="bottomRow">            
-                <div class="generatedComponent">
-                    <p>This will hold generated code component</p>
-                </div>
+            <div class="tableCreatorMenu">
+                <p>This will hold table menu</p>
             </div>
         </div>
-    </body>
+        <div class="bottomRow">
+            <div class="generatedComponent">
+                <p>This will hold generated code component</p>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>

@@ -23,16 +23,30 @@
                 <span>Table</span>
                 <div class="fakeTable">
                     <span>Row 1</span>
-                        <div class="fakeRow">
-                            <span>Column 1</span>
-                            <div class="fakeColumn">
+                    <div class="fakeRow">
+                        <span>Column 1</span>
+                        <div class="fakeColumn">
 
-                            </div>
                         </div>
+                    </div>
                 </div>
             </div>
             <div class="tableCreatorMenu">
-                <p>This will hold table menu</p>
+                <h2>Table</h2>
+                <p>Select a column or row to see more options</p>
+                <span class="inputDiv"><strong>OR</strong></span>
+                <p>Create a layout with initial count of rows and values </p>
+                <div class="inputContainer">
+                    <div class="rowContainer"> 
+                        <label for="rowCount">Number of Rows</label>
+                        <input type="number" id="rowCount" min="1" max="10">
+                    </div>
+                    <div>
+                        <label for="columnCount">Number of Column</label>
+                        <input type="number" id="columnCount" min="1" max="5">
+                    </div>
+                </div>
+                <button>Create Table</button>
             </div>
         </div>
         <div class="bottomRow">

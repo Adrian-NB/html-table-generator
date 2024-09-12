@@ -39,25 +39,25 @@
     padding-top: 16px;
 }
 
-.inputContainer div{
+.inputContainer div {
     width: 25%;
 }
 
-.inputContainer{
+.inputContainer {
     display: flex;
     margin-bottom: 25px;
 }
 
-.inputContainer input{
+.inputContainer input {
     width: 100%;
 }
 
-input, 
+input,
 label {
-    display: block; 
+    display: block;
 }
 
-.rowContainer{
+.rowContainer {
     margin-right: 25px;
 }
 

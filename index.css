@@ -1,3 +1,8 @@
+input,
+label {
+    display: block;
+}
+
 #main {
     display: none;
 }
@@ -13,10 +18,31 @@
     justify-content: center;
 }
 
-.generatedComponent {
-    width: 30%;
-    background-color: gray;
-    text-align: center;
+.fakeColumn {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.fakeOuterColumn {
+    flex: 1;
+}
+
+.fakeOuterRow,
+.fakeTable{
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.fakeRow {
+    display: flex;
+}
+
+.fakeTable {
+    width: 95%;
+}
+
+.fakeTableContainer {
+    padding-top: 16px;
 }
 
 .fakeTableContainer,
@@ -24,23 +50,10 @@
     width: 50%;
 }
 
-.fakeRow,
-.fakeTable,
-.fakeColumn {
-    width: 95%;
-}
-
-.fakeTableContainer div {
-    border: 1px solid black;
-    padding: 20px;
-}
-
-.fakeTableContainer {
-    padding-top: 16px;
-}
-
-.inputContainer div {
-    width: 25%;
+.generatedComponent {
+    width: 30%;
+    background-color: gray;
+    text-align: center;
 }
 
 .inputContainer {
@@ -48,22 +61,16 @@
     margin-bottom: 25px;
 }
 
+.inputContainer div {
+    width: 25%;
+}
+
 .inputContainer input {
     width: 100%;
 }
 
-input,
-label {
-    display: block;
-}
-
 .rowContainer {
     margin-right: 25px;
-}
-
-
-.tableCreatorMenu {
-    padding-left: 15px;
 }
 
 .tableCreator {
@@ -75,11 +82,14 @@ label {
     width: 150px;
 }
 
+.tableCreatorMenu {
+    padding-left: 15px;
+}
+
 .title {
     font-size: xx-large;
     font-weight: 800;
 }
-
 
 .topRow {
     display: flex;

@@ -3,9 +3,6 @@ label {
     display: block;
 }
 
-#main {
-    display: none;
-}
 
 #startContainer {
     align-items: center;
@@ -37,10 +34,6 @@ label {
     display: flex;
 }
 
-.fakeTable {
-    width: 95%;
-}
-
 .fakeTableContainer {
     padding-top: 16px;
 }
@@ -51,46 +44,64 @@ label {
 }
 
 .generatedComponent {
-    width: 30%;
+    width: 70%;
     background-color: gray;
-    text-align: center;
 }
 
 .inputContainer {
+    width: 150px;
+}
+
+.inputRow {
     display: flex;
+    gap: 25px;
     margin-bottom: 25px;
 }
 
-.inputContainer div {
-    width: 25%;
-}
-
-.inputContainer input {
+.inputRow input {
     width: 100%;
 }
 
-.rowContainer {
-    margin-right: 25px;
-}
-
-.tableCreator {
-    background-color: #ffc0cb;
-    border: 5px solid rgb(15, 53, 224);
-    border-radius: 10px;
-    color: #000;
-    height: 150px;
-    width: 150px;
+.page {
+    width: 75%;
 }
 
 .tableCreatorMenu {
     padding-left: 15px;
 }
 
+.tableCreatorMenu p {
+    font-style: italic;
+}
+
 .title {
-    font-size: xx-large;
     font-weight: 800;
 }
 
 .topRow {
     display: flex;
+    margin-bottom: 25px;
 }
+
+@media screen and (max-width: 900px) {
+    .fakeTableContainer {
+        padding-left: 15px;
+    }
+
+    .generatedComponent {
+        width: 100%;
+    }
+
+    .page {
+       width: 100%;
+    }    
+
+    .title{
+        padding-left: 15px;
+    }
+
+    .topRow {
+        flex-direction: column;
+     }
+
+ }

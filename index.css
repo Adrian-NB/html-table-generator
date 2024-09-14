@@ -25,7 +25,7 @@ label {
 }
 
 .fakeOuterRow,
-.fakeTable{
+.fakeTable {
     border: 1px solid black;
     padding: 20px;
 }
@@ -84,8 +84,10 @@ label {
 }
 
 @media screen and (max-width: 900px) {
-    .fakeTableContainer {
-        padding-left: 15px;
+
+    .fakeTableContainer,
+    .tableCreatorMenu {
+        width: 100%;
     }
 
     .generatedComponent {
@@ -93,15 +95,15 @@ label {
     }
 
     .page {
-       width: 100%;
-    }    
+        width: 100%;
+    }
 
-    .title{
+    .title {
         padding-left: 15px;
     }
 
     .topRow {
         flex-direction: column;
-     }
+    }
 
- }
+}

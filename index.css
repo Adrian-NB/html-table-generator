@@ -2,6 +2,35 @@ body {
     font-family: 'Helvetica Neue', sans-serif;
 }
 
+.button {
+    background-color: #E3E3E3;
+    border-radius: 10px;
+    border: 1px solid #767676;
+    box-shadow: -1px 2px 4px 2px rgba(0, 0, 0, 0.25);
+    font-weight: 100;
+    padding: 10px 25px;
+}
+
+.button:hover {
+    background-color: #cdcdcd;
+    cursor: pointer;
+}
+
+.button:disabled {
+    color: #b3b3b3;
+    cursor: not-allowed;
+    background-color: #d9d9d9;
+}
+
+#columnCount,
+#rowCount {
+    border: 1px solid #d9d9d9; 
+    border-radius: 10px;
+    /* padding: 10px 25px;  */
+    /* width: 160px; */
+    
+}
+
 h1 {
     font-size: 3.5rem;
     margin: 12px 0px;

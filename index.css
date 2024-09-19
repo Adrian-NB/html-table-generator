@@ -46,6 +46,11 @@ label {
     display: block;
 }
 
+input {
+    box-sizing: inherit;
+    width: 100%;
+}
+
 #startContainer {
     align-items: center;
     display: flex;
@@ -91,13 +96,16 @@ label {
 }
 
 .inputContainer {
-    width: 150px;
+    box-sizing: border-box;
+    background-color: #d9d9d9; 
+    border: 1px solid #000;
+    width: 300px;
 }
 
 .inputRow {
     display: flex;
-    gap: 25px;
-    margin-bottom: 25px;
+    gap: 60px;
+    margin-bottom: 20px;
 }
 
 .inputRow input {
@@ -128,6 +136,10 @@ label {
 @media screen and (max-width: 900px) {
     body {
         padding: 0 15px;
+    }
+
+    h1 {
+        font-size: 45px;
     }
     
     .fakeTableContainer,

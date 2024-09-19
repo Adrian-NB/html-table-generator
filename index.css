@@ -26,9 +26,7 @@ body {
 #rowCount {
     border: 1px solid #d9d9d9; 
     border-radius: 10px;
-    /* padding: 10px 25px;  */
-    /* width: 160px; */
-    
+    padding: 1.5px 1.5px;
 }
 
 h1 {
@@ -97,9 +95,7 @@ input {
 
 .inputContainer {
     box-sizing: border-box;
-    background-color: #d9d9d9; 
-    border: 1px solid #000;
-    width: 300px;
+    width: 200px;
 }
 
 .inputRow {

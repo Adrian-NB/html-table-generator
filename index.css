@@ -3,7 +3,6 @@ label {
     display: block;
 }
 
-
 #startContainer {
     align-items: center;
     display: flex;
@@ -84,7 +83,10 @@ label {
 }
 
 @media screen and (max-width: 900px) {
-
+    body {
+        padding: 0 15px;
+    }
+    
     .fakeTableContainer,
     .tableCreatorMenu {
         width: 100%;
@@ -98,12 +100,11 @@ label {
         width: 100%;
     }
 
-    .title {
-        padding-left: 15px;
+    .tableCreatorMenu {
+        padding-left: 0px;
     }
 
     .topRow {
         flex-direction: column;
     }
-
 }

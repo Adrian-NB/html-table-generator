@@ -77,11 +77,11 @@ label {
     display: flex;
 }
 
-.fakeTableContainer {
+#col1 {
     padding-top: 16px;
 }
 
-.fakeTableContainer,
+#col1,
 .tableCreatorMenu {
     width: 50%;
 }
@@ -132,7 +132,7 @@ label {
         font-size: 45px;
     }
     
-    .fakeTableContainer,
+    #col1,
     .tableCreatorMenu {
         width: 100%;
     }

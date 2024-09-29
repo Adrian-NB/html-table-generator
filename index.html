@@ -18,16 +18,18 @@
                 <h1>Table Generator</h1>
             </div>
             <div class="topRow">
-                <div class="fakeTableContainer">
-                    <span>Table</span>
-                    <div class="fakeTable">
-                        <span>Row 1</span>
-                        <div class="fakeOuterRow">
-                            <div class="fakeRow">
-                                <div class="fakeOuterColumn">
-                                    <span>Column 1</span>
-                                    <div class="fakeColumn">
-
+                <div id="col1">
+                    <div class="fakeTableContainer">
+                        <span>Table</span>
+                        <div class="fakeTable">
+                            <span>Row 1</span>
+                            <div class="fakeOuterRow">
+                                <div class="fakeRow">
+                                    <div class="fakeOuterColumn">
+                                        <span>Column 1</span>
+                                        <div class="fakeColumn">
+    
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -49,7 +51,7 @@
                             <input type="number" id="columnCount" min="1" max="5">
                         </div>
                     </div>
-                    <button class="button">Create Table</button>
+                    <button class= "button" onclick="createTable()">Create Table</button>
                 </div>
             </div>
             <div class="bottomRow">

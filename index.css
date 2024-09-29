@@ -79,11 +79,11 @@ input {
     display: flex;
 }
 
-.fakeTableContainer {
+#col1 {
     padding-top: 16px;
 }
 
-.fakeTableContainer,
+#col1,
 .tableCreatorMenu {
     width: 50%;
 }
@@ -138,7 +138,7 @@ input {
         font-size: 45px;
     }
     
-    .fakeTableContainer,
+    #col1,
     .tableCreatorMenu {
         width: 100%;
     }

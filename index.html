@@ -27,7 +27,7 @@
                                 <div class="fakeRow">
                                     <div class="fakeOuterColumn">
                                         <span>Column 1</span>
-                                        <div class="fakeColumn">
+                                        <div class="fakeColumn" id="0-0">
     
                                         </div>
                                     </div>
@@ -52,6 +52,10 @@
                         </div>
                     </div>
                     <button class= "button" onclick="createTable()">Create Table</button>
+                </div>
+                <div class="columnEditorMenu">
+                    <textarea id="columnEditor" class="columnEditor"></textarea>
+                    <button onclick="storeColumnData()">Submit</button>
                 </div>
             </div>
             <div class="bottomRow">

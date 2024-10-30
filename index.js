@@ -39,8 +39,8 @@ function createTable() {
     const rowCountInput = document.getElementById('rowCount'); 
     const columnCountInput = document.getElementById('columnCount');
     
-    const tableOpenSnippet = '<div class="fakeTableContainer"><span>Table</span><div class="fakeTable">';
-    const rowOpenSnippet = '<span>Row 1</span><div class="fakeOuterRow"> <div class="fakeRow">';
+    const tableOpenSnippet = '<div class="fakeTableContainer"><span class="tableAnnotation">Table</span><div class="fakeTable">';
+    const rowOpenSnippet = '<span class="tableAnnotation">Row 1</span><div class="fakeOuterRow"> <div class="fakeRow">';
     const rowCloseSnippet = '</div></div>';
     const tableCloseSnippet = '</div></div>';
 
@@ -53,7 +53,7 @@ function createTable() {
         let rowArray = [];
         output += rowOpenSnippet;
         for (let j = 0; j < columnCountInput.value ; j++) {
-            let columnSnippet = `<div class="fakeOuterColumn"><span>Column 1</span><div class="fakeColumn" id="${i}-${j}"></div></div>`;
+            let columnSnippet = `<div class="fakeOuterColumn"><span class="tableAnnotation">Column 1</span><div class="fakeColumn" id="${i}-${j}"></div></div>`;
             let columnPlaceholder = '';
             rowArray.push(columnPlaceholder);
             output += columnSnippet;

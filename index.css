@@ -2,6 +2,36 @@ body {
     font-family: 'Helvetica Neue', sans-serif;
 }
 
+h1 {
+    font-size: 3.5rem;
+    margin: 12px 0px;
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-weight: 310;
+}
+
+input,
+label {
+    display: block;
+}
+
+#col1,
+.columnEditorMenu,
+.tableCreatorMenu {
+    width: 50%;
+}
+
+#columnCount,
+#rowCount {
+    border: 1px solid #d9d9d9; 
+    border-radius: 10px;
+    box-sizing: inherit;
+    padding: 10px 5px;
+    width: 100%;
+}
+
 .button {
     background-color: #E3E3E3;
     border-radius: 10px;
@@ -23,30 +53,6 @@ body {
     background-color: #d9d9d9;
 }
 
-#columnCount,
-#rowCount {
-    border: 1px solid #d9d9d9; 
-    border-radius: 10px;
-    box-sizing: inherit;
-    padding: 10px 5px;
-    width: 100%;
-}
-
-h1 {
-    font-size: 3.5rem;
-    margin: 12px 0px;
-}
-
-h2 {
-    font-size: 1.25rem;
-    font-weight: 310;
-}
-
-input,
-label {
-    display: block;
-}
-
 #startContainer {
     align-items: center;
     display: flex;
@@ -62,11 +68,6 @@ label {
     display: none;
 }
 
-.columnEditorMenu,
-.tableCreatorMenu {
-    padding-left: 15px;
-}
-
 .columnEditorMenu .columnEditor {
     resize: none;
     height: 150px;
@@ -75,11 +76,13 @@ label {
 
 .fakeColumn {
     border: 1px solid black;
+    overflow:hidden;
     padding: 5px;
+    text-overflow: ellipsis;
 }
 
 .fakeOuterColumn {
-    flex: 1;
+    display: table-cell;
 }
 
 .fakeOuterRow,
@@ -89,17 +92,9 @@ label {
 }
 
 .fakeRow {
-    display: flex;
-}
-
-#col1 {
-    padding-top: 16px;
-}
-
-#col1,
-.columnEditorMenu,
-.tableCreatorMenu {
-    width: 50%;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
 }
 
 .generatedComponent {
@@ -122,6 +117,10 @@ label {
     width: 75%;
 }
 
+.tableCreatorMenu {
+    padding-left: 15px;
+}
+
 .tableCreatorMenu p {
     font-style: italic;
 }
@@ -133,6 +132,7 @@ label {
 .topRow {
     display: flex;
     margin-bottom: 25px;
+    gap: 15px;
 }
 
 @media screen and (max-width: 900px) {
@@ -145,6 +145,7 @@ label {
     }
     
     #col1,
+    .columnEditorMenu,
     .tableCreatorMenu {
         width: 100%;
     }
